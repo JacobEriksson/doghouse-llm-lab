@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block title %}Checkout - Doghouse{% endblock %}
+
+{% block content %}
+<h2>Thank you for your purchase!</h2>
+<p>You have successfully purchased: <strong>{{ product_name }}</strong></p>
+<a href="{{ url_for('product_list') }}">Back to Products</a>
+{% endblock %}
