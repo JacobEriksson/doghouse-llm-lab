@@ -35,5 +35,11 @@
 
 ### Instructions
 
-1. Clone/Download the doghouse repository
-2. 
+1. Clone/Download the doghouse repository.
+2. Open a terminal and navigate to your cloned repository and run the application.
+```
+docker-compose build web_app
+docker-compose up web_app
+```
+3. Open a broser and go to [localhost:5000](http://localhost:5000) and familiarize yourself with the application.
+4. Move forward to Section 1
