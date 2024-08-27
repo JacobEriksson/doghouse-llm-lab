@@ -1,5 +1,6 @@
+# Doghouse LLM Lab
 
-**Prereqs**
+### Prereqs
 
 1. Install Docker & Docker Compose - [Docker via Homebrew](https://formulae.brew.sh/formula/docker) & [Docker Compose via Homebrew](https://formulae.brew.sh/formula/docker-compose) or [Docker Web](https://www.docker.com/products/docker-desktop/)
 2. Install an IDE - Example: [VSCode via Homebrew](https://formulae.brew.sh/cask/visual-studio-code) or [VSCode](https://code.visualstudio.com/)
@@ -9,7 +10,7 @@
 5. Optional: Azure Portal Access
    - If no access: Make a Freshservice request
 
-***Tree***
+***Doghouse Tree***
 ```
 ├── Dockerfile
 ├── app.py
@@ -31,3 +32,8 @@
 │   └── products.html
 └── wheel-0.44.0-py3-none-any.whl
 ```
+
+### Instructions
+
+1. Clone/Download the doghouse repository
+2. 
