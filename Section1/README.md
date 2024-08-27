@@ -1,6 +1,6 @@
 # Section 1
 
-## Welcome back! Time for expansion
+## Welcome back! Time for Observability
 
 Hey DevOps Engineer and welcome back from your PTO! 
 I'm now off so I'm giving you some instructions of what needs to be done as your highest priority!
