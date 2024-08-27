@@ -8,3 +8,26 @@
 4. Access your Datadog Sandbox
 5. Optional: Azure Portal Access
    - If no access: Make a Freshservice request
+
+***Tree***
+
+├── Dockerfile
+├── app.py
+├── docker-compose.yaml
+├── favicon.ico
+├── requirements.txt
+├── static
+│   ├── css
+│   │   └── styles.css
+│   └── img
+│       ├── doghouse_logo.png
+│       └── favicon.png
+├── templates
+│   ├── about.html
+│   ├── base.html
+│   ├── checkout.html
+│   ├── home.html
+│   ├── product.html
+│   └── products.html
+└── wheel-0.44.0-py3-none-any.whl
+
