@@ -4,7 +4,7 @@
 
 It wasn't just observability we needed apparently. Customers are complaining about our support, so the execs decided that we should implement a support bot using OpenAI.. 
 
-Yea I know.. We are getting fired soon, enjoy it while you can.. 
+Yea I know.. We are getting replaced by robots, lets enjoy the ride!
 
 PS.. We need to observe the OpenAI usage and cost, can you make sure it works with Datadog as well?
 
