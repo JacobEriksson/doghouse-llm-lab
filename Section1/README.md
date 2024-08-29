@@ -45,3 +45,4 @@ docker-compose -f docker-compose.yaml build web_app
 # Launch your containers
 docker-compose up web_app datadog -d
 ```
+PS. Don't forget to use your DD_API_KEY
