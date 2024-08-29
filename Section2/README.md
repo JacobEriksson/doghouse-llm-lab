@@ -18,14 +18,38 @@ So buckle up, DevOps heroes. We’re on a wild ride into the future of AI, obser
 Good luck again!
 
 ## How-to
-1. Create an OpenAI API KEY
-2. Add additional app.routes and chat functionality in app.py
-3. Create the chatbot.html and add a link in base.html page
-4. Add OpenAI Env variables to docker-compose file
-4. Build and test the chatbot!
+1. Create an OpenAI Organization API KEY 
+2. Create the chatbot.html and add a link in base.html page. (see Template folder) 
+3. Add additional app.routes to the Flask App.
+4. Add the OpenAI Chatbot functionality to the Flask App.
+5. Add OpenAI Env variables to docker-compose file.
+6. Build and Run your container and test the chatbot!
+7. Add Observability
+8. Verify
 
-#### Add the observability:
-Check the following documentation [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
+## Useful documentation
+
+**Links**
+
+- [OpenAI Platform & Organization overview](https://platform.openai.com/organization/api-keys)
+- [OpenAI Getting Started](https://platform.openai.com/docs/guides/chat-completions/getting-started)
+- [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+- [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
+
+**Docker commands** 
+```
+# Build a Docker Image
+docker build -t doghouse-app .
+
+# Build your Docker Compose file
+docker-compose -f docker-compose.yaml build web_app
+
+# Launch your containers
+docker-compose up web_app datadog -d
+```
+
+PS. Remember the DD_API_KEY? Now you need to add your OPENAI_API_KEY as well.
+
 
 #### Conclusion
 
@@ -33,3 +57,5 @@ Did you manage to get it to work?
 (Topics to discuss with your collague)
 - What can we see in Datadog? Dashboards, traces, metrics, LLMs?
 - LLM Observability, what can we see? Anything missing?
+
+
