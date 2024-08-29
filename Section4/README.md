@@ -23,9 +23,8 @@ So, if you’re up for the challenge, dive in and show Azure who’s boss. And r
 4. t
 
 #### Observability:
-1. No more agentless lets use the sdk
-2. decorators
-3. 
+1. Port it to Azure OpenAI
+
 
 ## How-to
 

@@ -23,7 +23,24 @@ Good luck, and may the DevOps gods smile upon you. 🍀
 ## How-to
 
 1. Add dd-trace to requirements.txt
-2. Add env, service & version-tags and labels in the Docker File together make sure the app runs with ddtrace-run. 
+2. Add Universal Service Tags and labels in the Docker File and make sure the app runs with ddtrace-run. 
 3. Add datadog tracer to docker-compose.yaml
 4. Build and run your container
 5. Make sure you get traces & metrics in your Sandbox Environment
+
+## Useful docuemntation
+
+**Links**
+[Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+
+**Docker commands** 
+```
+# Build a Docker Image
+docker build -t doghouse-app .
+
+# Build your Docker Compose file
+docker-compose -f docker-compose.yaml build web_app
+
+# Launch your containers
+docker-compose up web_app datadog -d
+```
