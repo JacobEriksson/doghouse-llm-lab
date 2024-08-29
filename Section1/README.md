@@ -20,7 +20,7 @@ Remember, the fate of the Doghouse (and possibly my next PTO) rests in your capa
 
 Good luck, and may the DevOps gods smile upon you. 🍀
 
-## How-to
+## Exercise
 
 1. Add dd-trace to requirements.txt
 2. Add Universal Service Tags and labels in the Docker File and make sure the app runs with ddtrace-run. 
