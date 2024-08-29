@@ -17,8 +17,7 @@ So buckle up, DevOps heroes. We’re on a wild ride into the future of AI, obser
 
 Good luck again!
 
-
-#### Here's the actions:
+## How-to
 1. Create an OpenAI API KEY
 2. Add additional app.routes and chat functionality in app.py
 3. Create the chatbot.html and add a link in base.html page
@@ -26,17 +25,11 @@ Good luck again!
 4. Build and test the chatbot!
 
 #### Add the observability:
-Hmm.. I'm not really sure, I didn't have time to look in to it.. I think we should be able to use the OpenAI Quickstart with LLMOMBS Agentless.. 
-
 Check the following documentation [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
 
+#### Conclusion
 
 Did you manage to get it to work? 
 (Topics to discuss with your collague)
 - What can we see in Datadog? Dashboards, traces, metrics, LLMs?
 - LLM Observability, what can we see? Anything missing?
-
-
-## How-to
-
-text
