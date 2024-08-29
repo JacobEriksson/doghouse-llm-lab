@@ -31,6 +31,7 @@ Good luck, and may the DevOps gods smile upon you. 🍀
 ## Useful documentation
 
 **Links**
+
 [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
 
 **Docker commands** 
