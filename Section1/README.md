@@ -28,7 +28,7 @@ Good luck, and may the DevOps gods smile upon you. 🍀
 4. Build and run your container
 5. Make sure you get traces & metrics in your Sandbox Environment
 
-## Useful docuemntation
+## Useful documentation
 
 **Links**
 [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
