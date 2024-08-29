@@ -2,19 +2,28 @@
 
 ## Welcome back! Time for Observability
 
-Hey DevOps Engineer and welcome back from your PTO! 
-I'm now off so I'm giving you some instructions of what needs to be done as your highest priority!
+Hey DevOps Wizards, welcome back to the battlefield! 🧙‍♂️🛠️
 
-You know the Doghouse webstore, while you were gone the Executive decided that we need to implement observability.. quickly..
-We had some issues when you were off.. A decision has been made to go with Datadog. 
+Hope you enjoyed your PTO and are feeling recharged because, well, I’m out the door for mine. Yep, it’s your turn to dive back into the chaos, and boy, do I have a quest for you!
 
-I'v gathered a list of the things you have to accomplish:
+While you were off sunbathing (or binge-watching your favorite show—no judgment), the Executive team had a brilliant idea. You know our beloved Doghouse webstore? The one that sometimes feels like it's held together with duct tape and prayers? Yeah, that one. Turns out, we had a few hiccups while you were sipping margaritas, and now the bigwigs have decided that what we really need is observability. And we need it yesterday.
+
+But don't worry, they’ve chosen Datadog as the magical solution to all our woes! 
+
+Here’s a scroll of heroic tasks that need your immediate attention:
+
+1. First, you'll need to charm the Datadog platform and get your Sandbox Environment up and running. 
+2. Make sure it actually works with our Doghouse store. I recommend starting with a ritual dance around the server rack. It might not help, but it’ll be fun.
+3. Finally, sprinkle some pixie dust (or just use your scripting skills, whatever works) to ensure the observability work as intended.. Mainly looking at Metrics and Traces 👀
+
+Remember, the fate of the Doghouse (and possibly my next PTO) rests in your capable hands. No pressure!
+
+Good luck, and may the DevOps gods smile upon you. 🍀
+
+## How-to
+
 1. Add dd-trace to requirements.txt
 2. Add env, service & version-tags and labels in the Docker File together make sure the app runs with ddtrace-run. 
 3. Add datadog tracer to docker-compose.yaml
 4. Build and run your container
 5. Make sure you get traces & metrics in your Sandbox Environment
-
-## How-to
-
-text
