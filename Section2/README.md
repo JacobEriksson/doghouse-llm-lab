@@ -17,7 +17,7 @@ So buckle up, DevOps heroes. We’re on a wild ride into the future of AI, obser
 
 Good luck again!
 
-## How-to
+## Exercise
 1. Create an OpenAI Organization API KEY 
 2. Create the chatbot.html and add a link in base.html page. (see Template folder) 
 3. Add additional app.routes to the Flask App.
