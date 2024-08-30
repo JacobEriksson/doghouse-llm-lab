@@ -1,31 +1,29 @@
 # Section 2
 
-## But wait, there's more!
+## And the plot thickens, Wizards! 🧙‍♀️📈
 
-Turns out, observability wasn’t the only thing on the execs' wish list. Apparently, our customers have been a bit, shall we say, disgruntled with our customer support. (Who knew “Did you try turning it off and on again?” wouldn’t be the magic cure for all woes?) So, the execs have decided to jump on the latest tech bandwagon and—wait for it—implement a support bot using OpenAI. Yep, we’re officially welcoming our robot overlords to the team! 🤖
+Just when you thought the adventure was all about shiny new features, the execs have another task for you. You see, while you were off recharging your magical powers, our trusty Doghouse webstore encountered a few glitches. Naturally, the bigwigs decided that we need to keep a closer eye on things—because what’s better than fixing problems? Catching them before they explode!
 
-I know what you’re thinking: First observability, now this? But hey, if we’re going to be replaced by AI, we might as well enjoy the ride, right? Who knows, maybe the bots will do such a good job that we can all take extended PTO. 🌴
+So, we’re diving deep into the mystical arts of observability. That’s right, it’s time to add an observability agent to our app and start collecting all those sweet, sweet metrics and traces. Think of it like adding a crystal ball that lets us see everything our app is up to—only with more dashboards and less fog.
 
-Here’s what you’ll need to tackle next:
-1. Build the Bot - Your mission, should you choose to accept it (and trust me, you don’t have a choice), is to integrate OpenAI into our doghouse app. The goal? Make this bot so helpful that customers start asking it for life advice.
+Here’s what you need to conjure up:
 
-2. Keep an Eye on the Bots - But here’s the kicker: while our shiny new support bot is chatting away with customers, we need to make sure it’s not burning through our budget faster than a developer at an all-you-can-eat snack bar. We need to monitor OpenAI usage and costs—yes, with Datadog again. Think of it as giving Datadog a new hobby.
+1. Deploy the Observability Agent - First, install and configure the observability agent within the Doghouse app. It’s like giving our app a little helper that reports back on everything it sees. (No pressure, little agent, but we’re counting on you.)
 
-3. Ensure Smooth Integration - And of course, because nothing is ever simple, make sure this whole setup doesn’t bring down the entire Doghouse in the process. If the bot starts giving out wrong answers or setting things on fire, you’ll be the one who gets the call—probably while you’re trying to enjoy a quiet evening with a glass of wine.
+2. Collect Metrics and Traces - Next, we need to set up the collection of metrics and traces. We’re talking about everything from response times to error rates—basically, if the app blinks, we want to know about it. And if it sneezes? We need a full report.
 
-So buckle up, DevOps heroes. We’re on a wild ride into the future of AI, observability, and, possibly, world domination. Let’s make sure we’re the ones in control—at least for now. 🚀
+3. Integrate with Existing Tools - Finally, tie everything into our existing observability stack. We need to make sure that the data flows seamlessly to our dashboards, where we can gaze upon it and pretend we totally understand what’s going on at all times. 📊
 
-Good luck again!
+So, grab your cauldron—or maybe just your favorite IDE—and let’s brew up some top-notch observability. With these spells in place, we’ll have our app under a watchful eye, and you can rest easy knowing we’re catching issues before they catch us.
+
+Good luck, and may your logs be plentiful and your metrics crystal clear! 🔍
 
 ## Exercise
-1. Create an OpenAI Organization API KEY 
-2. Create the chatbot.html and add a link in base.html page. (see Template folder) 
-3. Add additional app.routes to the Flask App.
-4. Add the OpenAI Chatbot functionality to the Flask App.
-5. Add OpenAI Env variables to docker-compose file.
-6. Build and Run your container and test the chatbot!
-7. Add Observability
-8. Verify
+1. 
+2. 
+3. 
+4. 
+5. 
 
 ## Useful documentation
 

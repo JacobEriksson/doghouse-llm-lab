@@ -4,35 +4,40 @@
 
 Hey DevOps Wizards, welcome back to the battlefield! 🧙‍♂️🛠️
 
-Hope you enjoyed your PTO and are feeling recharged because, well, I’m out the door for mine. Yep, it’s your turn to dive back into the chaos, and boy, do I have a quest for you!
+Hope you enjoyed your well-deserved break, because now it’s my turn to disappear into the land of relaxation. But before I vanish, I’ve got some magical tasks for you to tackle as your highest priority!
 
-While you were off sunbathing (or binge-watching your favorite show—no judgment), the Executive team had a brilliant idea. You know our beloved Doghouse webstore? The one that sometimes feels like it's held together with duct tape and prayers? Yeah, that one. Turns out, we had a few hiccups while you were sipping margaritas, and now the bigwigs have decided that what we really need is observability. And we need it yesterday.
+So, remember our beloved Doghouse webstore? While you were off sipping piña coladas (or whatever your vacation drink of choice is), the leadership decided it’s time to boost sales with some fancy new functionality. Their big idea? A concept designer where customers can input a few details, and voilà—we offer them the perfect doghouse to buy right on the spot. Genius, right? (And by "genius," I mean, "We’ve got our work cut out for us.")
 
-But don't worry, they’ve chosen Datadog as the magical solution to all our woes! 
+We’ve already wrangled a company to develop the app for us—because nothing says “we’re serious” like outsourcing the hard part! Now, it’s up to you to weave your DevOps magic and get this thing up and running. Fun, right? 😅
 
-Here’s a scroll of heroic tasks that need your immediate attention:
+Oh, and did I mention? While you were away, the decision was made to sprinkle some observability into the mix. Because nothing says “smooth launch” like tracking every little hiccup! So, we’ll need to keep an eye on this shiny new OpenAI app too.
 
-1. First, you'll need to charm the Datadog platform and get your Sandbox Environment up and running. 
-2. Make sure it actually works with our Doghouse store. I recommend starting with a ritual dance around the server rack. It might not help, but it’ll be fun.
-3. Finally, sprinkle some pixie dust (or just use your scripting skills, whatever works) to ensure the observability work as intended.. Mainly looking at Metrics and Traces 👀
+Here’s what’s on your to-do list:
 
-Remember, the fate of the Doghouse (and possibly my next PTO) rests in your capable hands. No pressure!
+1. Add the HTML Files and Routes - First up, integrate those shiny new HTML files and app.routes into our Doghouse application. Make sure everything’s as smooth as a golden retriever’s coat.
 
-Good luck, and may the DevOps gods smile upon you. 🍀
+2. Make sure to integrate with OpenAI - Next, make sure the application taps into our newly created OpenAI keys. We want this AI-powered doghouse ceoncept designer to be as smart as it sounds—or at least not embarrassingly dumb.
+
+3. Instrument with Observability - And finally, let’s not forget our new favorite thing: observability! Instrument the OpenAI app with the observability Datadog thingy so we can monitor, measure, and maybe even marvel at how everything is working.
+
+So, roll up your sleeves, grab your wand—or keyboard—and let’s make some magic happen! 🔮
 
 ## Exercise
 
-1. Add dd-trace to requirements.txt
-2. Add Universal Service Tags and labels in the Docker File and make sure the app runs with ddtrace-run. 
-3. Add datadog tracer to docker-compose.yaml
-4. Build and run your container
-5. Make sure you get traces & metrics in your Sandbox Environment
+1. Implement the designer page to our webstore (see instructions provided)
+2. Leverage the OpenAI Quickstart guide to use the agentless integration
+3. Update Docker-compose and Docker files
+4. Build & Run the app
+5. Conclusion discussion with the wider team
+
+![Let's go teamwork](https://teamhood.com/wp-content/uploads/2022/09/teamwork-anchor-meme.jpg)
+
 
 ## Useful documentation
 
 **Links**
 
-[Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+[Datadog OpenAI Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/)
 
 **Docker commands** 
 ```
@@ -45,4 +50,4 @@ docker-compose -f docker-compose.yaml build web_app
 # Launch your containers
 docker-compose up web_app datadog -d
 ```
-PS. Don't forget to use your DD_API_KEY
+PS. Don't forget to use your DD_API_KEY & OPENAI_API_KEY
