@@ -91,7 +91,6 @@ def generate_doghouse_suggestion_workflow(style, size, color, user_ip):
 
 
 # Generate doghouse suggestion
-# @llm(model_name='gpt-3.5-turbo', name='generate_suggestion')
 def generate_suggestion(user_prompt, system_prompt):
     response = client.chat.completions.create(
         model="gpt-3.5-turbo",
@@ -124,6 +123,5 @@ def generate_doghouse_suggestion(request):
     color = request.form['color']
     # location = request.form['location']
     user_ip = get_user_ip(request)
-    # with LLMObs.span('generate_doghouse_suggestion'):
     house_suggestion, image_url = generate_doghouse_suggestion_workflow(style, size, color, user_ip)
     return house_suggestion, image_url

@@ -5,18 +5,16 @@
 dd-agent LLM Obs
 
 #### Exercise
-1. Add and initiate dd-tracer through docker-compose.yaml (PS. dd-tracer is already added in the Python requirements)
-2. Import LLMObs in the designer.py application.
-3. Rebuild your images and compose files and run it. 
-4. Regroup with the wider team and discuss the differences.
+1. Add and initiate dd-tracer through docker-compose.yaml remember to add or edit necessary environment variables. (PS. dd-tracer is already added in the Python requirements)
+2. Rebuild your images and compose files and run it. 
+3. Regroup with the wider team and discuss the differences.
 
 ## Useful documentation
 
 **Links**
-- [LLM Observability Python SDK](https://docs.datadoghq.com/llm_observability/setup/sdk/)
-- [OpenAI Getting Started](https://platform.openai.com/docs/guides/chat-completions/getting-started)
-- [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
 - [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
+- [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+
 
 **Docker commands** 
 ```

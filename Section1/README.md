@@ -9,9 +9,10 @@ OpenAI Integration
 1. Build & run the doghouse application - Did it work? If not, why? Check log output in Docker if necessary.
     - App will be running on: http://localhost:5000
 2. Test the chatbot to see if it works.
-3. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
-4. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
-4. Conclusion discussion with the wider team
+3. Log in to your Datadog Sandbox Environment
+4. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
+5. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
+6. Conclusion discussion with the wider team
 
 ![Let's go teamwork](https://teamhood.com/wp-content/uploads/2022/09/teamwork-anchor-meme.jpg)
 
@@ -20,7 +21,9 @@ OpenAI Integration
 
 **Links**
 
-[Datadog OpenAI Integration](https://docs.datadoghq.com/integrations/openai/?tab=apikey)
+- [Datadog OpenAI Integration](https://docs.datadoghq.com/integrations/openai/?tab=apikey)
+- [OpenAI Platform](https://platform.openai.com/)
+- [OpenAI Org & API](https://platform.openai.com/organization/api-keys)
 
 **Useful Docker commands** 
 ```

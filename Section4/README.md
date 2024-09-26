@@ -5,9 +5,11 @@
 Tracing spans with Decorators & Annotations
 
 #### Here's the actions:
-1. Identify the different steps that's being taken in the Designer App and map those to Span types
-2. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference.
-3. Regroup with the wider team and discuss the differences and outcome.
+1. Download the additional files in this folder and replace the ones in your working repository. This introduces the new Designer Application!
+2. Rebuild your images and compose files and run it. 
+3. Identify the different steps that's being taken in the Designer App and map those to Span types
+4. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference.
+5. Regroup with the wider team and discuss the differences and outcome.
 
 ## Useful documentation
 
