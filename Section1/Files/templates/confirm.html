@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Confirmation - Doghouse{% endblock %}
+
+{% block content %}
+    <h2>Confirm your preferences:</h2>
+    <p><b><strong>Style:</strong></b> {{ style }}</p>
+    <p><b><strong>Size:</strong></b> {{ size }}</p>
+    <p><b><strong>Color:</strong></b> {{ color }}</p>
+    <p><b><strong>Location:</strong></b> {{ location }}</p>
+    
+    <form action="{{ url_for('confirm') }}" method="POST">
+        <input type="hidden" name="style" value="{{ style }}">
+        <input type="hidden" name="size" value="{{ size }}">
+        <input type="hidden" name="color" value="{{ color }}">
+        <!-- <input type="hidden" name="location" value="{{ location }}"> -->
+        <button type="submit">Confirm and Get Suggestion</button>
+    </form>
+    
+    <form action="{{ url_for('designer') }}">
+        <button type="submit">Edit Inputs</button>
+    </form>
+{% endblock %}

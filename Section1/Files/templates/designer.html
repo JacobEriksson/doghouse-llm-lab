@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - Doghouse{% endblock %}
+
+{% block content %}
+
+    <h2>Doghouse Designer</h2>
+    <form method="POST">
+        <label for="style">Preferred Style: (e.g., Classic, Futuristic, Steampunk, Luxury)</label>
+        <input type="text" id="style" name="style" required><br><br>
+
+        <label for="size">Preferred Size (e.g., small, medium, large):</label>
+        <input type="text" id="size" name="size" required><br><br>
+
+        <label for="location">Preferred Color:</label>
+        <input type="text" id="color" name="color" required><br><br>
+
+        <!-- <label for="location">Preferred Location (e.g., Outdoor, In-door, backyard):</label>
+        <input type="text" id="location" name="location" required><br><br> -->
+
+        <button type="submit">Get Suggestion</button>
+    </form>
+
+{% endblock %}

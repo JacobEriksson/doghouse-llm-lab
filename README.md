@@ -4,17 +4,19 @@
 
 1. Install Docker & Docker Compose - [Docker via Homebrew](https://formulae.brew.sh/formula/docker) & [Docker Compose via Homebrew](https://formulae.brew.sh/formula/docker-compose) or [Docker Web](https://www.docker.com/products/docker-desktop/)
 2. Install an IDE - Example: [VSCode via Homebrew](https://formulae.brew.sh/cask/visual-studio-code) or [VSCode](https://code.visualstudio.com/)
-3. Make sure you have access to OpenAI-platform - [OpenAI Platform](https://platform.openai.com/)
-   - If no access: Make a Freshservice request for OpenAI access
+3. Make sure you can access OpenAI-platform - [OpenAI Platform](https://platform.openai.com/)
 4. Access your Datadog Sandbox
 5. Optional: Azure Portal Access
-   - If no access: Make a Freshservice request
 
 ***Doghouse Tree***
 ```
 ├── Dockerfile
 ├── app.py
 ├── docker-compose.yaml
+├── doghouse
+│   ├── chatbot.py
+│   ├── models.py
+│   └── routes.py
 ├── favicon.ico
 ├── requirements.txt
 ├── static
@@ -26,20 +28,17 @@
 ├── templates
 │   ├── about.html
 │   ├── base.html
+│   ├── chatbot.html
 │   ├── checkout.html
 │   ├── home.html
 │   ├── product.html
 │   └── products.html
-└── wheel-0.44.0-py3-none-any.whl
 ```
 
 ### Instructions
 
 1. Clone/Download the doghouse repository.
-2. Open a terminal and navigate to your cloned repository and run the application.
-```
-docker-compose build web_app
-docker-compose up web_app
-```
-3. Open a broser and go to [localhost:5000](http://localhost:5000) and familiarize yourself with the application.
-4. Move forward to Section 1
+2. Generate an OpenAI API Key
+3. Get your Datadog Sandbox environment ready. (If you are using .EU, you will have to specify this through out the exercise.)
+   - Generate/Copy and save an API Key to use during the exercise
+4. Move on to Section 01.
