@@ -13,6 +13,9 @@ Here’s what needs to happen:
 
 Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t cause any chaos behind the scenes. You’ve got this! 💪✨
 
+![Let's go teamwork](https://teamhood.com/wp-content/uploads/2022/09/teamwork-anchor-meme.jpg)
+
+
 ## Exercise
 
 1. Build & run the doghouse application - Did it work? If not, why? Check log output in Docker if necessary.
@@ -23,7 +26,6 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
 5. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
 6. Conclusion discussion with the wider team
 
-![Let's go teamwork](https://teamhood.com/wp-content/uploads/2022/09/teamwork-anchor-meme.jpg)
 
 
 ## Useful documentation
