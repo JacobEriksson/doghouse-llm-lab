@@ -18,6 +18,7 @@ Agentless LLM Obs & deploy designer
 - [Open AI Quickstart Guide](https://docs.datadoghq.com/llm_observability/quickstart/)
 - [OpenAI Getting Started](https://platform.openai.com/docs/guides/chat-completions/getting-started)
 - [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+
 **Docker commands** 
 ```
 # Build a Docker Image
@@ -31,13 +32,4 @@ docker-compose up web_app -d
 ```
 
 PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
-
-
-#### Conclusion
-
-Did you manage to get it to work? 
-(Topics to discuss with your collague)
-- What can we see in Datadog? Dashboards, traces, metrics, LLMs?
-- LLM Observability, what can we see? Anything missing?
-
 

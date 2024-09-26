@@ -1,6 +1,6 @@
 # Section 4
 
-## Plot Twist: Just When You Thought It Was Over…
+## Plot Twist: Just When You Thought It Was Over… 🎨✨
 
 Tracing spans with Decorators & Annotations
 
@@ -18,6 +18,16 @@ Tracing spans with Decorators & Annotations
 [Datadog Annottating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
 [Tracing LLM Spans](https://docs.datadoghq.com/llm_observability/setup/sdk/#tracing-spans)
 
-## How-to
+**Docker commands** 
+```
+# Build a Docker Image
+docker build -t doghouse-app .
 
-text
+# Build your Docker Compose file
+docker-compose -f docker-compose.yaml build web_app
+
+# Launch your containers
+docker-compose up web_app datadog -d
+```
+
+PS. Remember variables KEY="VALUE" docker-compose up web_app -d 

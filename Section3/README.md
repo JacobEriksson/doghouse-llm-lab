@@ -1,6 +1,6 @@
 # Section 3
 
-## And now, back to the main event! 🎨✨
+## And now, back to the main event! 
 
 dd-agent LLM Obs
 
@@ -18,11 +18,16 @@ dd-agent LLM Obs
 - [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
 - [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
 
-#### Observability:
-1. No more agentless lets use the sdk
-2. decorators
-3. 
+**Docker commands** 
+```
+# Build a Docker Image
+docker build -t doghouse-app .
 
-## How-to
+# Build your Docker Compose file
+docker-compose -f docker-compose.yaml build web_app
 
-text
+# Launch your containers
+docker-compose up web_app datadog -d
+```
+
+PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
