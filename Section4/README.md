@@ -18,7 +18,8 @@ With the Design Studio, the stakes are higher and the system’s a bit more intr
 
 Let’s make it happen! 💥💻🐾
 
-#### Here's the actions:
+## Exercise
+
 1. Download the additional files in this folder and replace the ones in your working repository. This introduces the new Designer Application!
 2. Rebuild your images and compose files and run it. 
 3. Identify the different steps that's being taken in the Designer App and map those to Span types

@@ -16,7 +16,8 @@ Here’s what we’re fixing up:
 
 So, it’s time to embrace the agent life, plug it all in, and let’s make sure that chatbot—and the rest of the system—is performing like a rock star. And who knows? Maybe this agent really will give us some next-level insights. 🚀
 
-#### Exercise
+## Exercise
+
 1. Add and initiate dd-tracer through Dockerfile & docker-compose.yaml remember to add or edit necessary environment variables. (PS. dd-tracer is already added in the Python requirements)
 2. Rebuild your images and compose files and run it. 
 3. Regroup with the wider team and discuss the differences.
