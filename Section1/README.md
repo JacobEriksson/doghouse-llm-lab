@@ -2,7 +2,7 @@
 
 ## Welcome back! Time for Observability
 
-TEXT & Description
+OpenAI Integration
 
 ## Exercise
 
@@ -10,7 +10,7 @@ TEXT & Description
     - App will be running on: http://localhost:5000
 2. Test the chatbot to see if it works.
 3. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
-4. Run a few prompts and see the results in your Datadog Sandbox.
+4. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
 4. Conclusion discussion with the wider team
 
 ![Let's go teamwork](https://teamhood.com/wp-content/uploads/2022/09/teamwork-anchor-meme.jpg)
@@ -31,6 +31,6 @@ docker build -t doghouse-app .
 docker-compose -f docker-compose.yaml build web_app
 
 # Launch your containers
-docker-compose up web_app datadog -d
+docker-compose up web_app -d
 ```
 PS. Don't forget to use your OPENAI_API_KEY
