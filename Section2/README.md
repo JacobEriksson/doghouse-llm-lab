@@ -2,7 +2,7 @@
 
 ## And the plot thickens, Wizards! 🧙‍♀️📈
 
-TEXT
+Agentless LLM Obs & deploy designer
 
 ## Exercise
 1. Update the docker-compose.yaml with necessary environment variables. See useful links!

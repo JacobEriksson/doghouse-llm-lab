@@ -2,18 +2,21 @@
 
 ## And now, back to the main event! 🎨✨
 
-Our journey with the Doghouse concept designer isn’t over yet, brave DevOps Wizards. The app is up, running, and ready to dazzle our customers with AI-generated doghouse designs. But there’s one more trick we need to pull off to make this magical creation truly shine: it’s time to sprinkle in some observability magic—the fancy kind.
+dd-agent LLM Obs
 
-The execs are thrilled with the app, but they want to make sure that when they gaze upon our dashboards, they see something that’s as polished as a freshly groomed poodle. That means adding the necessary annotations and decorators to the app, so everything looks as shiny and organized as possible in the observability app. After all, if we’re going to spy on our app, we might as well do it in style.
+#### Exercise
+1. Add and initiate dd-tracer through docker-compose.yaml (PS. dd-tracer is already added in the Python requirements)
+2. Import LLMObs in the designer.py application.
+3. Rebuild your images and compose files and run it. 
+4. Regroup with the wider team and discuss the differences.
 
+## Useful documentation
 
-Good luck, and may the code be ever in your favor! 🧙‍♂️🐕🏠
-
-#### Here's the actions:
-1. t
-2. e
-3. x
-4. t
+**Links**
+- [LLM Observability Python SDK](https://docs.datadoghq.com/llm_observability/setup/sdk/)
+- [OpenAI Getting Started](https://platform.openai.com/docs/guides/chat-completions/getting-started)
+- [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+- [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
 
 #### Observability:
 1. No more agentless lets use the sdk
