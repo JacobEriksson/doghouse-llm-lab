@@ -1,8 +1,17 @@
 # Section 1
 
-## Welcome back! Time for Observability
+## Hey DevOps Wizards, welcome back from your PTO! 🏖️🐾
 
-OpenAI Integration
+I hope you soaked up enough sunshine because things have been moving while you were gone! Remember the Doghouse webstore? Well, this summer, we introduced that shiny new chatbot (because, of course, we did), and now we need to make sure it’s not secretly running wild with OpenAI tokens and slowing things down.
+
+Here’s what needs to happen:
+
+- Connect to the New Observability Tool – Plug in the shiny new observability tool and make sure it’s working its magic. 
+- Track Token Usage – The chatbot’s been busy, and we need to know how many OpenAI tokens it’s using. Are we on budget, or is this bot ready to bankrupt us? Time to find out!
+- Monitor Usage & Requests – Keep an eye on the chatbot’s basic performance. Anything helps! 
+
+
+Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t cause any chaos behind the scenes. You’ve got this! 💪✨
 
 ## Exercise
 

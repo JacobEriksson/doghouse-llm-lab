@@ -1,8 +1,17 @@
 # Section 2
 
-## And the plot thickens, Wizards! 🧙‍♀️📈
+## And guess what? There’s more! 🧙‍♀️📈
 
-Agentless LLM Obs & deploy designer
+You thought we were done? Not a chance! The execs have decided that tracking token usage isn’t enough. Oh no, they want more data—better data. Now, they want us to track performance and get visibility into the actual AI prompts being used. 
+
+Here’s what we need to pull off:
+
+- Monitor Performance – We’re already tracking basic usage, but now we need to dive deeper. No more vague "slowdowns"; we need specifics. When things start to crawl, we want to know why. If the chatbot’s lagging, we need to pinpoint it like a detective on a coffee bender.
+- Get Visibility into Prompts – The execs want to see what the chatbot’s saying and why. They’re all about “transparency” now. We need a way to track the actual prompts being sent to OpenAI, and we need to do it without installing any extra agents. We’re looking for some sleek, behind-the-scenes magic here.
+
+So, yeah, it's a little like pulling a rabbit out of a hat, but hey—no pressure! Let’s make this observability expansion happen, get the chatbot performing like an Olympic athlete, and give the execs the AI prompt insights they’re dreaming of.
+
+Game on! 🏆🐾
 
 ## Exercise
 1. Update the docker-compose.yaml with necessary environment variables to support agentless LLM Observability. See useful links!
