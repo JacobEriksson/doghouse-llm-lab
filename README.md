@@ -36,7 +36,7 @@
 
 ### Instructions
 
-1. Clone/Download the doghouse repository.
+1. Clone/Download the doghouse-store repository.
 2. Generate an OpenAI API Key
 3. Get your Datadog Sandbox environment ready. (If you are using .EU, you will have to specify this through out the exercise.)
    - Generate/Copy and save an API Key to use during the exercise
