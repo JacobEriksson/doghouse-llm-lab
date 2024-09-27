@@ -23,8 +23,9 @@ Let’s make it happen! 💥💻🐾
 1. Download the additional files in this folder and replace the ones in your working repository. This introduces the new Designer Application!
 2. Rebuild your images and compose files and run it. 
 3. Identify the different steps that's being taken in the Designer App and map those to Span types
-4. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference.
-5. Regroup with the wider team and discuss the differences and outcome.
+4. Import the neessary libraries (dd-trace et)
+5. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference.
+6. Regroup with the wider team and discuss the differences and outcome.
 
 ## Useful documentation
 
@@ -32,6 +33,7 @@ Let’s make it happen! 💥💻🐾
 ![LLM Trace Spans](https://datadog-docs.imgix.net/images/llm_observability/llm-observability-agent-trace.d90aaafac7a89ad70cbe9caab393841f.png?fit=max&auto=format&w=1754&h=968)
 
 **Links**
+[Datadog Set up LLM Observability](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators)
 [Datadog Annottating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
 [Tracing LLM Spans](https://docs.datadoghq.com/llm_observability/setup/sdk/#tracing-spans)
 
