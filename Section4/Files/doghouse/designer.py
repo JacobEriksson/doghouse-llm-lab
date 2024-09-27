@@ -19,7 +19,7 @@ def get_user_ip(request):
     # else:
     #     user_ip = request.remote_addr
     # return user_ip
-    user_ip = '188.180.95.94' # since we run the app locally, our IP is always 127.0.0.1, so for simplicity we just return a hardcoded value
+    user_ip = '62.181.224.18' # since we run the app locally, our IP is always 127.0.0.1, so for simplicity we just return a hardcoded value
     return user_ip
 
 # Tool: Detect city by IP
