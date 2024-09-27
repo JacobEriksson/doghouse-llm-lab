@@ -39,3 +39,26 @@ footer {
     border-radius: 4px;
     padding: 5px;
 }
+
+.image-container {
+    display: flex;
+    justify-content: left;
+    gap: 30px;
+    align-items: center;
+    margin: 20px;
+}
+
+.image-box {
+    text-align: center;
+}
+
+.image-box img {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+}
+
+.image-box p {
+    margin-top: 10px;
+    font-size: 16px;
+}
