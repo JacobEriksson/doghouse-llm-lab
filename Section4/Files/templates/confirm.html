@@ -7,7 +7,7 @@
     <p><b><strong>Style:</strong></b> {{ style }}</p>
     <p><b><strong>Size:</strong></b> {{ size }}</p>
     <p><b><strong>Color:</strong></b> {{ color }}</p>
-    <p><b><strong>Location:</strong></b> {{ location }}</p>
+    <!-- <p><b><strong>Location:</strong></b> {{ location }}</p> -->
     
     <form action="{{ url_for('confirm') }}" method="POST">
         <input type="hidden" name="style" value="{{ style }}">
