@@ -98,7 +98,7 @@ def generate_suggestion(user_prompt, system_prompt):
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
-        max_tokens=100
+        max_tokens=200
     )
     return response.choices[0].message.content.strip()
     
