@@ -17,7 +17,7 @@ Game on! 🏆🐾
 
 1. Update the docker-compose.yaml with necessary environment variables to support agentless LLM Observability. See useful links!
 2. Make sure the application run with dd-tracer in the Dockerfile. No need to install through pip as it's already in the requirements.txt
-3. Rebuild your docker compose and run and declare your variables at runtime or with a specific env file.
+3. Rebuild your docker files and run and declare your variables at runtime or with a specific env file.
 4. Regroup with the wider team and discuss the differences with OpenAI integration and the agentless OpenAI Integration.
 
 ## Useful documentation
