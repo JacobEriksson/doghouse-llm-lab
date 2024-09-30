@@ -23,8 +23,9 @@ Let’s make it happen! 💥💻🐾
 1. Download the additional files in this folder and replace the ones in your working repository. This introduces the new Designer Application!
 2. Rebuild your images and compose files and run it. 
 3. Identify the different steps that's being taken in the Designer App and map those to Span types
-4. Import the neessary libraries (dd-trace et)
-5. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference.
+4. Import the neessary libraries (dd-trace etc)
+5. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference. 
+**PS. You can test it out with the chatbot first if you want to test a simpler use-case.**
 6. Regroup with the wider team and discuss the differences and outcome.
 
 ## Useful documentation
