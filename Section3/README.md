@@ -1,6 +1,6 @@
 # Section 3
 
-## Oh, guess what? 🎢✨
+## Agents for life! 🎢✨
 
 Remember how the execs were all about “no agents” last week? Well, apparently someone gave them a very convincing PowerPoint, and now they’ve done a complete 180. Turns out, adding an agent is the new “must-have” because, according to the latest wisdom, it will unlock even more “valuable data”—their words, not mine.
 
@@ -18,9 +18,9 @@ So, it’s time to embrace the agent life, plug it all in, and let’s make sure
 
 ## Exercise
 
-1. Add dd-agent in docker-compose.yaml remember to add or edit necessary environment variables. 
+1. Add the dd-agent to docker-compose.yaml to run it in parallel to the webapp, remember to add or edit necessary environment variables. 
 2. Rebuild your images and compose files and run it. 
-3. Regroup with the wider team and discuss the differences.
+3. Regroup with the wider team and discuss the differences. 
 
 ## Useful documentation
 
