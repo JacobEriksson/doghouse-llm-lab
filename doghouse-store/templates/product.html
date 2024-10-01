@@ -4,10 +4,13 @@
 
 {% block content %}
 <h2>{{ product.name }}</h2>
-<p>{{ product.description }}</p>
-<p><strong>Price:</strong> ${{ product.price }}</p>
-<form action="{{ url_for('purchase', id=product.id) }}" method="post">
-    <button type="submit">Purchase</button>
-</form>
-<a href="{{ url_for('product_list') }}">Back to Products</a>
+<div class="product-detail-container">
+    <img src="{{ url_for('static', filename='img/' + product.image) }}" alt="{{ product.name }}" class="product-detail-image">
+    
+    <p><strong>Price:</strong> ${{ product.price }}</p>
+    <p>{{ product.description }}</p>
+    
+    <form action="{{ url_for('purchase', id=product.id) }}" method="post">
+        <button type="submit">Purchase</button>
+    </form>
 {% endblock %}
