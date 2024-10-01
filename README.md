@@ -22,8 +22,13 @@
 │   ├── css
 │   │   └── styles.css
 │   └── img
+│       ├── Kim.png
+│       ├── Oswald.png
+│       ├── classic_doghouse.png
+│       ├── deluxe_doghouse.png
 │       ├── doghouse_logo.png
-│       └── favicon.png
+│       ├── favicon.png
+│       └── portable_doghouse.png
 ├── templates
 │   ├── about.html
 │   ├── base.html
