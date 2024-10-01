@@ -26,6 +26,7 @@ So, it’s time to embrace the agent life, plug it all in, and let’s make sure
 
 **Links**
 - [LLM Observability Quickstart](https://docs.datadoghq.com/llm_observability/quickstart/?site=us)
+- [LLM Observability Python SDK](https://docs.datadoghq.com/llm_observability/setup/sdk/)
 - [Tutorial - Enabling Tracing for a Python Application and Datadog Agent in Containers](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-containers/)
 
 
