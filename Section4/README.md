@@ -28,6 +28,12 @@ Let’s make it happen! 💥💻🐾
 **PS. You can test it out with the chatbot first if you want to test a simpler use-case.**
 6. Regroup with the wider team and discuss the differences and outcome.
 
+
+**Take some Notes of the following:**
+- What was the instructions / system prompt for building the doghouse suggestion?
+- Do we see all the OpenAI Requests? Why?
+
+
 ## Useful documentation
 
 **Reference Picture**
