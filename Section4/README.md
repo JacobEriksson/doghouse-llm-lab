@@ -34,9 +34,9 @@ Let’s make it happen! 💥💻🐾
 ![LLM Trace Spans](https://datadog-docs.imgix.net/images/llm_observability/llm-observability-agent-trace.d90aaafac7a89ad70cbe9caab393841f.png?fit=max&auto=format&w=1754&h=968)
 
 **Links**
-[Datadog Set up LLM Observability](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators)
-[Datadog Annottating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
-[Tracing LLM Spans](https://docs.datadoghq.com/llm_observability/setup/sdk/#tracing-spans)
+- [Datadog Set up LLM Observability](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators)
+- [Datadog Annottating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
+- [Tracing LLM Spans](https://docs.datadoghq.com/llm_observability/setup/sdk/#tracing-spans)
 
 **Docker commands** 
 ```
