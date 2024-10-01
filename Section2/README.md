@@ -17,16 +17,16 @@ Game on! 🏆🐾
 
 1. Update the docker-compose.yaml with necessary environment variables to support agentless LLM Observability. See useful links!
 2. Make sure the application run with dd-tracer in the Dockerfile. No need to install through pip as it's already in the requirements.txt
-3. Rebuild your docker compose and run and declare your variables at runtime or with a specific env file.
+3. Rebuild your docker files and run and declare your variables at runtime or with a specific env file.
 4. Regroup with the wider team and discuss the differences with OpenAI integration and the agentless OpenAI Integration.
 
 ## Useful documentation
 
 **Links**
 
-- [Datadog OpenAI Quickstart Guide](https://docs.datadoghq.com/llm_observability/quickstart/)
+- [Datadog LLM Observability starting guide](https://docs.datadoghq.com/llm_observability/quickstart/)
 - [OpenAI Getting Started](https://platform.openai.com/docs/guides/chat-completions/getting-started)
-- [Tutorial - Enabling Tracing for a Python Application in a Container and an Agent on a Host](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-container-agent-host/)
+- [Tutorial - Enabling Tracing for a Python Application and Datadog Agent in Containers](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-containers/)
 
 **Docker commands** 
 ```
