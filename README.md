@@ -9,11 +9,13 @@
 
 ***Doghouse Tree***
 ```
+.
 ├── Dockerfile
 ├── app.py
 ├── docker-compose.yaml
 ├── doghouse
 │   ├── chatbot.py
+│   ├── designer.py
 │   ├── models.py
 │   └── routes.py
 ├── favicon.ico
@@ -22,8 +24,6 @@
 │   ├── css
 │   │   └── styles.css
 │   └── img
-│       ├── Kim.png
-│       ├── Oswald.png
 │       ├── classic_doghouse.png
 │       ├── deluxe_doghouse.png
 │       ├── doghouse_logo.png
@@ -34,9 +34,13 @@
 │   ├── base.html
 │   ├── chatbot.html
 │   ├── checkout.html
+│   ├── confirm.html
+│   ├── designer.html
 │   ├── home.html
 │   ├── product.html
-│   └── products.html
+│   ├── products.html
+│   └── result.html
+└── wheel-0.44.0-py3-none-any.whl
 ```
 
 ### Instructions
