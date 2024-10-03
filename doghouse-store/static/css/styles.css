@@ -46,20 +46,6 @@ footer {
     margin: 20px;
 }
 
-.image-box {
-    text-align: center;
-}
-
-.image-box img {
-    width: 300px;
-    height: auto;
-}
-
-.image-box p {
-    margin-top: 10px;
-    font-size: 16px;
-}
-
 .product-container {
     display: flex;
     flex-wrap: wrap;
