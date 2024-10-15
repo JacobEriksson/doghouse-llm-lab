@@ -20,13 +20,13 @@ Let’s make it happen! 💥💻🐾
 
 ## Exercise
 
-1. Download the additional files in this folder and replace the ones in your working repository. This introduces the new Designer Application!
-2. Rebuild your images and compose files and run it. 
-3. Identify the different steps that's being taken in the Designer App and map those to Span types
-4. Import the neessary libraries (dd-trace etc)
-5. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference. 
+1. Time to introduce the Designer app! Run the application and test the designer page.
+2. Manually trace spans using decorators and annotations to visualise each span in LLM Observability. 
+    - Analyse the doghouse/designer.py file and identify the different steps and map those to LLM Span types. See useful links for more info!
+3. Import the neessary libraries (dd-trace etc)
+4. Decorate the different steps so Datadog LLM Obs can identify and visualise each span individually. See Picture below for reference. 
 **PS. You can test it out with the chatbot first if you want to test a simpler use-case.**
-6. Regroup with the wider team and discuss the differences and outcome.
+5. Regroup with the wider team and discuss the differences and outcome.
 
 
 **Take some Notes of the following:**
@@ -41,15 +41,14 @@ Let’s make it happen! 💥💻🐾
 
 **Links**
 - [LLM Observability Python SDK](https://docs.datadoghq.com/llm_observability/setup/sdk/)
-- [Datadog Set up LLM Observability](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators)
-- [Datadog Annottating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
+- [LLM Observability Terms and Concepts including Span Types](https://docs.datadoghq.com/llm_observability/terms/)
 - [Tracing LLM Spans](https://docs.datadoghq.com/llm_observability/setup/sdk/#tracing-spans)
+- [Datadog Set up LLM Observability](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators)
+- [Datadog Annotating spans](https://docs.datadoghq.com/llm_observability/setup/?tab=decorators#annotating-spans)
+
 
 **Docker commands** 
 ```
-# Build a Docker Image
-docker build -t doghouse-app .
-
 # Build your Docker Compose file
 docker-compose -f docker-compose.yaml build web_app
 
@@ -57,4 +56,4 @@ docker-compose -f docker-compose.yaml build web_app
 docker-compose up web_app datadog -d
 ```
 
-PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
+PS. Remember variables KEY="VALUE" docker-compose up web_app datadog -d 

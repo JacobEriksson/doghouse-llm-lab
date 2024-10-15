@@ -30,9 +30,6 @@ Game on! 🏆🐾
 
 **Docker commands** 
 ```
-# Build a Docker Image
-docker build -t doghouse-app .
-
 # Build your Docker Compose file
 docker-compose -f docker-compose.yaml build web_app
 

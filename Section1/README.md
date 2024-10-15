@@ -18,13 +18,14 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
 
 ## Exercise
 
-1. Build & run the doghouse application - Did it work? If not, why? Check log output in Docker if necessary.
+1. Generate an OpenAI API Key - See useful links for URL!
+2. Build & run the doghouse application - Did it work? If not, why? Check log output in Docker if necessary.
     - App will be running on: http://localhost:5000
-2. Test the chatbot to see if it works.
-3. Log in to your Datadog Sandbox Environment
-4. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
-5. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
-6. Conclusion discussion with the wider team
+3. Test the chatbot to see if it works.
+4. Log in to your Datadog Sandbox Environment
+5. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
+6. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
+7. Conclusion & discussion with the wider team
 
 
 
