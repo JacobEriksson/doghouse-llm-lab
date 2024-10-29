@@ -18,9 +18,11 @@ So, it’s time to embrace the agent life, plug it all in, and let’s make sure
 
 ## Exercise
 
-1. Add the dd-agent to docker-compose.yaml to run it in parallel to the webapp, remember to add or edit necessary environment variables. 
-2. Rebuild your images and compose files and run it. 
-3. Regroup with the wider team and discuss the differences. 
+1. Add the dd-agent to docker-compose.yaml to run it in parallel to the webapp, remember to add or edit necessary environment variables.
+2. Remove the agentless environment variable. 
+3. Rebuild your images and compose files and run it. 
+4. Generate some traffic using the webapp and Chatbot.
+5. Regroup with the wider team and discuss the differences. 
 
 ## Useful documentation
 
@@ -39,3 +41,45 @@ docker-compose up web_app datadog -d
 ```
 
 PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
+
+## Help
+
+### 1. Adding the Agent to run parallel to the application
+In previous section, we leveraged the agentless version of LLM Obs that gives us limited visibility in to our application. By adding the Datadog Agent, we can also start collecting additional data such as Infrastructure metrics, processes, Logs, APM and more. This also enables us to manually trace the LLM application to provide more granular insights, but more on that later.
+
+The way to do this, we will have to update the docker-compose.yaml file and add the necessary config:
+
+```
+services:
+  datadog:
+    container_name: dd-agent
+    image: "gcr.io/datadoghq/agent:latest"
+    environment:
+      - DD_APM_NON_LOCAL_TRAFFIC=true
+      - DD_DOGSTATSD_NON_LOCAL_TRAFFIC="true" 
+      - DD_HOSTNAME=datadog
+      - DD_APM_ENABLED=true
+      - DD_API_KEY=<DD_API_KEY> # Your Datadog Sandbox API Key
+      # - DD_SITE=<DD_SITE> # Specify the Datadog Site where your Sandbox Environment resides
+
+    volumes:
+      - /proc/:/host/proc/:ro
+      - /sys/fs/cgroup/:/host/sys/fs/cgroup:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+  web_app:
+   ...
+     ..
+```
+
+### 2. No more agentless
+Now when we are running the application with an agent, we can remove the environment variable on the web_app that instruct the application to leverage the agent instead.
+
+Remove the following line in your docker-compose.yaml:
+```
+DD_LLMOBS_AGENTLESS_ENABLED=1
+```
+
+Now launch your application:
+```
+docker-compose up web_app datadog -d
+```

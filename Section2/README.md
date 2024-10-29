@@ -18,7 +18,8 @@ Game on! 🏆🐾
 1. Update the docker-compose.yaml with necessary environment variables to support agentless LLM Observability. See useful links!
 2. Make sure the application run with dd-tracer in the Dockerfile. No need to install through pip as it's already in the requirements.txt
 3. Rebuild your docker files and run and declare your variables at runtime or with a specific env file.
-4. Regroup with the wider team and discuss the differences with OpenAI integration and the agentless OpenAI Integration.
+4. Test your application and see if you get any traces in LLM Observability.
+5. Regroup with the wider team and discuss the differences with OpenAI integration and the agentless OpenAI Integration.
 
 ## Useful documentation
 
@@ -29,13 +30,56 @@ Game on! 🏆🐾
 - [Tutorial - Enabling Tracing for a Python Application and Datadog Agent in Containers](https://docs.datadoghq.com/tracing/guide/tutorial-enable-python-containers/)
 
 **Docker commands** 
+
 ```
 # Build your Docker Compose file
 docker-compose -f docker-compose.yaml build web_app
 
 # Launch your containers
-docker-compose up web_app -d
+docker-compose up -d
 ```
 
-PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
+PS. Remember variables KEY="VALUE" docker-compose up -d 
 
+## Help
+
+### 1. Docker Copmose & Variables
+To be able to get started with LLM Observability we will have to make sure to prepare the Docker Compose file so all the necessary environment variables are declared. The Datadog documentation gives the following example:
+```
+DD_LLMOBS_ENABLED=1 DD_LLMOBS_ML_APP=onboarding-quickstart \
+DD_API_KEY=<YOUR_DATADOG_API_KEY> DD_SITE=datadoghq.com \
+DD_LLMOBS_AGENTLESS_ENABLED=1
+```
+
+To enable this in our app, add the following to the docker-compose.yaml file under the web-app environment section:
+```
+web_app:
+  ...
+  environment:
+  - DD_LLMOBS_ENABLED=1
+  - DD_LLMOBS_AGENTLESS_ENABLED=1 
+  - DD_LLMOBS_ML_APP=<SERVICE NAME> # Your LLM Obs Service Name
+  - DD_API_KEY=<DD_API_KEY> # Your Datadog Sandbox API Key
+  - DD_LLMOBS_AGENTLESS_ENABLED=1 
+  - DD_SITE=datadoghq.com # Specify the Datadog Site where your Sandbox Environment resides
+  ```
+
+### 2. Run the application with dd-tracer.
+In it's current shape, the container runs the web application normaly using the normal python process. We will need to update the Dockerfile or docker-compose file to run the application with the dd-tracer.
+
+Change the Dockerfile accordingly:
+```
+CMD ["python", "-m", "app"]
+
+to
+
+CMD ["ddtrace-run", "python", "-m", "app"]
+```
+
+### 3. Rebuild your application
+We will now have to rebuild your application to make sure our changes are incorporated. 
+
+Run:
+```
+docker-compose -f docker-compose.yaml build web_app
+```

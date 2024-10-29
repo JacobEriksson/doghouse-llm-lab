@@ -23,7 +23,7 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
     - App will be running on: http://localhost:5000
 3. Test the chatbot to see if it works.
 4. Log in to your Datadog Sandbox Environment
-5. Leverage Datadog OpenAPI Integration to connect to your project and organisation.
+5. Leverage Datadog OpenAPI Integration to connect to your project and organisation. (Skip the APM integration for now)
 6. Run a few prompts and see the results in your Datadog Sandbox. Do you see any usage?
 7. Conclusion & discussion with the wider team
 
@@ -33,19 +33,19 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
 
 **Links**
 
-- [Datadog OpenAI Integration](https://docs.datadoghq.com/integrations/openai/?tab=apikey)
+- [Datadog OpenAI Integration](https://app.datadoghq.com/integrations/openai?search=openai)
 - [OpenAI Platform](https://platform.openai.com/)
 - [OpenAI Org & API](https://platform.openai.com/organization/api-keys)
 
 **Useful Docker commands** 
 ```
 # Build a Docker Image
-docker build -t doghouse-app .
 
 # Build your Docker Compose file
 docker-compose -f docker-compose.yaml build web_app
 
 # Launch your containers
-docker-compose up web_app -d
+docker-compose up -d
 ```
+
 PS. Don't forget to use your OPENAI_API_KEY
