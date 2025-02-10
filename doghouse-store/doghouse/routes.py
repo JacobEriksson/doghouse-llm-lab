@@ -69,8 +69,8 @@ def init_routes(app):
     @app.route('/confirm', methods=['GET', 'POST'])
     def confirm():
         if request.method == 'POST':
-            suggestion, image_url = generate_doghouse_suggestion(request)
-            return redirect(url_for('result', suggestion=suggestion, image_url=image_url))
+            suggestion, image_url, image_uuid = generate_doghouse_suggestion(request)
+            return redirect(url_for('result', suggestion=suggestion, image_url=image_url, image_uuid=image_uuid))
 
         # Retrieve query parameters if GET method is used
         style = request.args.get('style')
@@ -83,5 +83,6 @@ def init_routes(app):
     @app.route('/result')
     def result():
         suggestion = request.args.get('suggestion')
-        image_url = request.args.get('image_url')    
-        return render_template('result.html', suggestion=suggestion, image_url=image_url)
+        image_url = request.args.get('image_url')   
+        image_uuid = request.args.get('image_uuid') 
+        return render_template('result.html', suggestion=suggestion, image_url=image_url, image_uuid=image_uuid)
