@@ -29,7 +29,7 @@
 │       ├── doghouse_logo.png
 │       ├── favicon.png
 │       └── portable_doghouse.png
-├── templates
+└── templates
     ├── about.html
     ├── base.html
     ├── chatbot.html
