@@ -30,17 +30,17 @@
 │       ├── favicon.png
 │       └── portable_doghouse.png
 ├── templates
-│   ├── about.html
-│   ├── base.html
-│   ├── chatbot.html
-│   ├── checkout.html
-│   ├── confirm.html
-│   ├── designer.html
-│   ├── home.html
-│   ├── product.html
-│   ├── products.html
-│   └── result.html
-└── wheel-0.44.0-py3-none-any.whl
+    ├── about.html
+    ├── base.html
+    ├── chatbot.html
+    ├── checkout.html
+    ├── confirm.html
+    ├── designer.html
+    ├── home.html
+    ├── product.html
+    ├── products.html
+    └── result.html
+
 ```
 
 ### Instructions
