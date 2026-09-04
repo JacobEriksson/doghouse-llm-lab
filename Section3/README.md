@@ -32,15 +32,15 @@ So, it’s time to embrace the agent life, plug it all in, and let’s make sure
 
 
 **Docker commands** 
-```
+```shell
 # Build your Docker Compose file
-docker-compose -f docker-compose.yaml build web_app
+docker compose build web_app
 
 # Launch your containers
-docker-compose up web_app datadog -d
+docker compose up web_app datadog -d
 ```
 
-PS. Remember variables KEY="VALUE" docker-compose up web_app -d 
+Remember to pass variables before the command: `KEY="VALUE" docker compose up web_app -d`.
 
 ## Help
 
@@ -81,5 +81,5 @@ DD_LLMOBS_AGENTLESS_ENABLED=1
 
 Now launch your application:
 ```
-docker-compose up web_app datadog -d
+docker compose up web_app datadog -d
 ```

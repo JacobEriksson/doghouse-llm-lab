@@ -31,15 +31,15 @@ Game on! 🏆🐾
 
 **Docker commands** 
 
-```
+```shell
 # Build your Docker Compose file
-docker-compose -f docker-compose.yaml build web_app
+docker compose build web_app
 
 # Launch your containers
-docker-compose up -d
+docker compose up -d
 ```
 
-PS. Remember variables KEY="VALUE" docker-compose up -d 
+Remember to pass variables before the command: `KEY="VALUE" docker compose up -d`.
 
 ## Help
 
@@ -64,14 +64,10 @@ web_app:
   ```
 
 ### 2. Run the application with dd-tracer.
-In it's current shape, the container runs the web application normaly using the normal python process. We will need to update the Dockerfile or docker-compose file to run the application with the dd-tracer.
+The current Dockerfile already starts the application with `ddtrace-run`. If starting it another way, keep the tracer wrapper shown below so the current Datadog library can instrument Flask and OpenAI calls.
 
-Change the Dockerfile accordingly:
+The relevant Dockerfile command is:
 ```
-CMD ["python", "-m", "app"]
-
-to
-
 CMD ["ddtrace-run", "python", "-m", "app"]
 ```
 
@@ -80,5 +76,5 @@ We will now have to rebuild your application to make sure our changes are incorp
 
 Run:
 ```
-docker-compose -f docker-compose.yaml build web_app
+docker compose build web_app
 ```

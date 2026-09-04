@@ -1,16 +1,20 @@
 # doghouse/designer.py
 
-from openai import OpenAI
-import requests
 import logging
-from .models import *
+
+import requests
+from openai import OpenAI
+
+from .models import city_climate_mapping, climate_recommendations
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Initialize OpenAI client
-client = OpenAI()
+def get_openai_client():
+    """Create the client only when an OpenAI-backed feature is used."""
+    return OpenAI()
+
 
 def get_user_ip(request):
     # Get user ip from request
@@ -29,11 +33,12 @@ def detect_city_by_ip(ip_address):
     """
     try:
         response = requests.get(f'https://ipinfo.io/{ip_address}/json', timeout=5)
+        response.raise_for_status()
         data = response.json()
-        city = data.get('city', 'Unknown');
+        city = data.get('city', 'Unknown')
         return city
-    except Exception as e:
-        print(f"Error detecting city for IP {ip_address}: {e}")
+    except (requests.RequestException, ValueError) as error:
+        logger.warning("Could not detect city for IP %s: %s", ip_address, error)
         return "Unknown"
 
 # Task: Generate user prompt
@@ -92,25 +97,30 @@ def generate_doghouse_suggestion_workflow(style, size, color, user_ip):
 
 # Generate doghouse suggestion
 def generate_suggestion(user_prompt, system_prompt):
-    response = client.chat.completions.create(
-        model="gpt-3.5-turbo",
+    response = get_openai_client().chat.completions.create(
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}
         ],
-        max_tokens=400
+        max_completion_tokens=400
     )
-    return response.choices[0].message.content.strip()
+    content = response.choices[0].message.content
+    if not content:
+        raise RuntimeError("OpenAI returned an empty doghouse suggestion")
+    return content.strip()
     
 # Generate image for the suggested doghouse
 def generate_image(house_suggestion):
-    response = client.images.generate(
+    response = get_openai_client().images.generate(
         model="dall-e-3",
         prompt=house_suggestion,
         n=1,
         size="1024x1024"
     )
     image_url = response.data[0].url
+    if not image_url:
+        raise RuntimeError("OpenAI returned no image URL")
     return image_url
     
 

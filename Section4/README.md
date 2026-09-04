@@ -49,15 +49,15 @@ Let’s make it happen! 💥💻🐾
 
 
 **Docker commands** 
-```
+```shell
 # Build your Docker Compose file
-docker-compose -f docker-compose.yaml build web_app
+docker compose build web_app
 
 # Launch your containers
-docker-compose up web_app datadog -d
+docker compose up web_app datadog -d
 ```
 
-PS. Remember variables KEY="VALUE" docker-compose up web_app datadog -d 
+Remember to pass variables before the command: `KEY="VALUE" docker compose up web_app datadog -d`.
 
 
 ## Help
