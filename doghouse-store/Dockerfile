@@ -4,10 +4,11 @@ WORKDIR /app
 
 COPY requirements.txt .
 
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --no-cache-dir --upgrade pip \
+    && python -m pip install --no-cache-dir --upgrade -r requirements.txt
 
 COPY . .
 
 EXPOSE 5000
 
-CMD ["python", "-m", "app"]
+CMD ["ddtrace-run", "python", "-m", "app"]

@@ -1,51 +1,45 @@
 # Doghouse LLM Lab
 
-### Prereqs
+## Prerequisites
 
-1. Install Docker & Docker Compose - [Docker via Homebrew](https://formulae.brew.sh/formula/docker) & [Docker Compose via Homebrew](https://formulae.brew.sh/formula/docker-compose) or [Docker Web](https://www.docker.com/products/docker-desktop/)
+1. Install Docker Desktop, which includes Docker Compose - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 2. Install an IDE - Example: [VSCode via Homebrew](https://formulae.brew.sh/cask/visual-studio-code) or [VSCode](https://code.visualstudio.com/)
 3. Make sure you can access OpenAI-platform - [OpenAI Platform](https://platform.openai.com/)
 4. Access your Datadog Sandbox Environment
 
-***Doghouse Tree***
+## Run the application
+
+The application uses current Flask, OpenAI Python SDK, Requests, and Datadog tracing releases. Transitive packages are resolved to their latest compatible versions during the image build.
+
+```shell
+cd doghouse-store
+OPENAI_API_KEY=<your-key> docker compose up --build -d
+```
+
+Open <http://localhost:5000>. The store pages work without an OpenAI key, but the chatbot and designer require one. To stop the application, run `docker compose down` from `doghouse-store`.
+
+To run the local smoke tests with the dependencies installed:
+
+```shell
+cd doghouse-store
+python -m unittest discover -s tests -v
+```
+
+## Project layout
+
 ```
 .
-├── Dockerfile
-├── app.py
-├── docker-compose.yaml
-├── doghouse
-│   ├── chatbot.py
-│   ├── designer.py
-│   ├── models.py
-│   └── routes.py
-├── favicon.ico
-├── requirements.txt
-├── static
-│   ├── css
-│   │   └── styles.css
-│   └── img
-│       ├── classic_doghouse.png
-│       ├── deluxe_doghouse.png
-│       ├── doghouse_logo.png
-│       ├── favicon.png
-│       └── portable_doghouse.png
-└── templates
-    ├── about.html
-    ├── base.html
-    ├── chatbot.html
-    ├── checkout.html
-    ├── confirm.html
-    ├── designer.html
-    ├── home.html
-    ├── product.html
-    ├── products.html
-    └── result.html
-
+├── doghouse-store/       # Flask application and container configuration
+├── Section1/             # OpenAI integration exercise
+├── Section2/             # Agentless LLM Observability exercise
+├── Section3/             # Datadog Agent exercise
+├── Section4/             # Manual LLM span exercise
+└── Solution/
 ```
 
-### Instructions
+## Lab instructions
 
-1. Clone/Download the doghouse-store repository.
+1. Clone or download this repository.
 2. Get your Datadog Sandbox environment ready. (If you are using .EU, you will have to specify this through out the exercise.)
    - Generate/Copy and save an API Key to use during the exercise
 3. Move on to Section 1.

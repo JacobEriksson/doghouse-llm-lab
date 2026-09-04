@@ -19,7 +19,7 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
 ## Exercise
 
 1. Generate an OpenAI API Key - See useful links for URL!
-2. Build & run the doghouse application - Did it work? If not, why? Check log output in Docker if necessary.
+2. From `doghouse-store`, build and run the application. Did it work? If not, check the Docker logs.
     - App will be running on: http://localhost:5000
 3. Test the chatbot to see if it works.
 4. Log in to your Datadog Sandbox Environment
@@ -38,14 +38,14 @@ Let’s get this sorted, make the execs happy, and ensure that chatbot doesn’t
 - [OpenAI Org & API](https://platform.openai.com/organization/api-keys)
 
 **Useful Docker commands** 
-```
+```shell
 # Build a Docker Image
 
 # Build your Docker Compose file
-docker-compose -f docker-compose.yaml build web_app
+docker compose build web_app
 
 # Launch your containers
-docker-compose up -d
+OPENAI_API_KEY=<your-key> docker compose up -d
 ```
 
-PS. Don't forget to use your OPENAI_API_KEY
+The store pages load without an API key; OpenAI-backed chatbot and designer requests require `OPENAI_API_KEY`.

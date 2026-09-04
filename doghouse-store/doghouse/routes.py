@@ -1,6 +1,6 @@
 from flask import render_template, request, redirect, url_for
 from .models import products
-from .designer import generate_doghouse_suggestion, get_user_ip
+from .designer import generate_doghouse_suggestion
 from .chatbot import chat_handler
 
 
@@ -69,8 +69,8 @@ def init_routes(app):
     @app.route('/confirm', methods=['GET', 'POST'])
     def confirm():
         if request.method == 'POST':
-            suggestion, image_url, image_uuid = generate_doghouse_suggestion(request)
-            return redirect(url_for('result', suggestion=suggestion, image_url=image_url, image_uuid=image_uuid))
+            suggestion, image_url = generate_doghouse_suggestion(request)
+            return redirect(url_for('result', suggestion=suggestion, image_url=image_url))
 
         # Retrieve query parameters if GET method is used
         style = request.args.get('style')
@@ -84,5 +84,4 @@ def init_routes(app):
     def result():
         suggestion = request.args.get('suggestion')
         image_url = request.args.get('image_url')   
-        image_uuid = request.args.get('image_uuid') 
-        return render_template('result.html', suggestion=suggestion, image_url=image_url, image_uuid=image_uuid)
+        return render_template('result.html', suggestion=suggestion, image_url=image_url)
